@@ -20,6 +20,18 @@
   --content: 920px;
 }
 
+#selected-pages .card-grid {
+  gap: 18px 24px;
+}
+
+#selected-pages .article-card h3 {
+  font-size: 1.18rem;
+}
+
+#selected-pages .article-card p {
+  max-width: 52ch;
+}
+
 * {
   box-sizing: border-box;
 }
