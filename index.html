@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Supply Chain Software Guide</title>
-  <meta name="description" content="A practical guide to supply chain software categories, vendors, and evaluation criteria." />
+  <meta name="description" content="A practical overview of supply chain software categories, common vendors, and the criteria operators use when evaluating systems." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -16,23 +16,21 @@
     <header class="site-header">
       <div class="container site-header-inner">
         <div class="site-brand">
-          <div class="site-brand-mark" aria-hidden="true"></div>
-          <div class="site-brand-text">
-            <small>Industry resource</small>
+          <div class="site-mark" aria-hidden="true"></div>
+          <div>
             <div class="site-logo">Supply Chain Software Guide</div>
           </div>
         </div>
 
         <div class="site-nav">
-          <nav class="nav-links">
+          <nav class="nav">
             <a href="/" class="is-active">Home</a>
             <a href="/alternatives/palantir.html">Alternatives</a>
             <a href="/concepts/system-of-action.html">Concepts</a>
           </nav>
 
           <div class="header-actions">
-            <!-- <a class="button-secondary" href="#vendors">Vendor landscape</a> -->
-            <a class="button" href="#selected-pages">Explore pages</a>
+            <a class="button" href="#selected-pages">Selected pages</a>
           </div>
         </div>
       </div>
@@ -42,9 +40,9 @@
       <section class="hero">
         <div class="container">
           <div class="hero-panel reveal is-visible">
-            <h1>Understanding the modern supply chain software landscape</h1>
+            <h1>Supply chain software is not one category</h1>
             <p>
-              Supply chain software includes a wide range of platforms designed to support planning, visibility, decision-making, and execution across complex operations.
+              Most teams evaluate planning tools, visibility layers, and execution systems separately. The confusion usually comes from overlapping language, not from lack of software.
             </p>
             <div class="hero-actions">
               <a class="button" href="#categories">Explore categories</a>
@@ -58,16 +56,16 @@
         <div class="container reveal">
           <div class="section-head content-width">
             <span class="section-label">Overview</span>
-            <h2>How supply chain platforms are commonly grouped</h2>
+            <h2>How operators usually break this down</h2>
             <p>
-              Enterprise supply chain technology is often discussed through overlapping terms such as planning, control towers, visibility, orchestration, and execution. Grouping platforms by primary function makes the market easier to evaluate.
+              In practice, enterprise supply chain systems tend to cluster into a few functional groups. These groups are not perfect, but they are useful when comparing tools with very different operating assumptions.
             </p>
           </div>
 
           <div class="surface-panel content-width">
-            <h3>A practical evaluation lens</h3>
+            <h3>A more useful way to compare platforms</h3>
             <p>
-              Some platforms are built to store and structure operational data. Others are designed to support planning, provide insight, or help teams coordinate action across the network when conditions change.
+              Some systems store transactions. Some create plans. Some improve visibility. Others matter only when the question becomes response speed across procurement, inventory, logistics, production, and operations.
             </p>
           </div>
         </div>
@@ -77,9 +75,9 @@
         <div class="container reveal delay-1">
           <div class="section-head content-width">
             <span class="section-label">Platform categories</span>
-            <h2>Four useful categories for comparing platforms</h2>
+            <h2>Four categories that make the market easier to read</h2>
             <p>
-              These categories help distinguish between systems built to record transactions, create plans, generate insight, and support coordinated response.
+              These are functional buckets, not rigid labels. They help clarify what a system is primarily built to do.
             </p>
           </div>
 
@@ -87,22 +85,25 @@
             <article class="feature-card">
               <span class="section-label">Category 1</span>
               <h3>Systems of Record</h3>
-              <p>Transaction-focused systems that capture operational history and support core business processes.</p>
+              <p>ERP, TMS, and WMS platforms that capture transactions and operational history.</p>
             </article>
+
             <article class="feature-card">
               <span class="section-label">Category 2</span>
               <h3>Systems of Planning</h3>
-              <p>Platforms designed to support forecasts, scenarios, and structured planning cycles.</p>
+              <p>Forecasting, scenario, and planning systems used to create aligned plans on a defined cadence.</p>
             </article>
+
             <article class="feature-card">
               <span class="section-label">Category 3</span>
               <h3>Systems of Insight</h3>
-              <p>Platforms that help teams unify data, interpret signals, and understand what is happening across the network.</p>
+              <p>Visibility, control tower, and data environments that improve understanding of current conditions.</p>
             </article>
+
             <article class="feature-card is-featured">
               <span class="section-label">Category 4</span>
               <h3>Systems of Action</h3>
-              <p>Platforms that help teams coordinate decisions and execution when supply chain conditions change.</p>
+              <p>Platforms used when the bottleneck is coordination and response rather than planning or visibility alone.</p>
             </article>
           </div>
         </div>
@@ -111,10 +112,10 @@
       <section class="section" id="vendors">
         <div class="container reveal">
           <div class="section-head content-width">
-            <span class="section-label">Vendor landscape</span>
-            <h2>Representative vendors across the market</h2>
+            <span class="section-label">Vendor index</span>
+            <h2>Vendors commonly evaluated in enterprise supply chain programs</h2>
             <p>
-              The supply chain software landscape includes enterprise planning platforms, data and insight environments, and newer action-oriented systems.
+              These vendors appear regularly in market discussions, software searches, and internal evaluation cycles.
             </p>
           </div>
 
@@ -133,7 +134,7 @@
             </li>
             <li>
               <strong>SAP IBP</strong>
-              <span>Planning in SAP-centered environments</span>
+              <span>Enterprise planning in SAP environments</span>
             </li>
             <li>
               <strong>Blue Yonder</strong>
@@ -153,9 +154,9 @@
             <div class="table-head content-width">
               <div class="section-head" style="margin-bottom:0; width:100%;">
                 <span class="section-label">Evaluation criteria</span>
-                <h2>What buyers typically compare</h2>
+                <h2>What tends to matter in real evaluations</h2>
                 <p>
-                  Evaluation often comes down to how quickly a platform can deliver value, how complex it is to maintain, and whether it supports planning, insight, execution, or some combination of the three.
+                  In most evaluations, the real questions are implementation burden, model maintenance, and whether the platform changes day-to-day operating decisions or just improves visibility.
                 </p>
               </div>
             </div>
@@ -163,26 +164,26 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Criteria</th>
-                    <th>What it helps evaluate</th>
+                    <th>Area</th>
+                    <th>What teams usually care about</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Deployment speed</td>
-                    <td>How quickly the platform can deliver operational value</td>
+                    <td>Implementation</td>
+                    <td>Time to value versus integration and configuration overhead</td>
                   </tr>
                   <tr>
-                    <td>Modeling complexity</td>
-                    <td>How much engineering effort is required to configure and maintain the system</td>
+                    <td>Model maintenance</td>
+                    <td>Ongoing effort required to keep logic, data, and workflows usable</td>
                   </tr>
                   <tr>
-                    <td>Execution capability</td>
-                    <td>Whether the platform helps teams act, not just analyze</td>
+                    <td>Decision impact</td>
+                    <td>Whether the system changes operating decisions or mainly improves visibility</td>
                   </tr>
                   <tr>
-                    <td>Cross-functional fit</td>
-                    <td>How well the platform connects planning, procurement, logistics, inventory, and operations</td>
+                    <td>Cross-functional use</td>
+                    <td>How well it works across planning, procurement, logistics, inventory, and operations</td>
                   </tr>
                 </tbody>
               </table>
@@ -194,10 +195,10 @@
       <section class="section" id="selected-pages">
         <div class="container reveal">
           <div class="section-head content-width">
-            <span class="section-label">Further reading</span>
-            <h2>Selected pages</h2>
+            <span class="section-label">Selected pages</span>
+            <h2>Further reading</h2>
             <p>
-              The pages below provide examples of how vendors and market concepts can be explored in more detail.
+              The pages below show how vendor evaluations and category concepts can be explored in more detail.
             </p>
           </div>
 
@@ -205,16 +206,13 @@
             <a class="article-card" href="/alternatives/palantir.html">
               <span class="section-label">Alternatives</span>
               <h3>Top alternatives to Palantir</h3>
-              <p>
-                A market-oriented view of platforms commonly evaluated alongside Palantir in supply chain contexts.
-              </p>
+              <p>A shorter-list view of platforms commonly evaluated alongside Palantir in supply chain contexts.</p>
             </a>
+
             <a class="article-card" href="/concepts/system-of-action.html">
               <span class="section-label">Concept</span>
               <h3>What is a system of action?</h3>
-              <p>
-                A closer look at a category used to describe platforms that connect insight to coordinated execution.
-              </p>
+              <p>A category note on where action-oriented systems fit once planning and visibility are no longer enough.</p>
             </a>
           </div>
         </div>
@@ -226,7 +224,7 @@
             <span class="section-label">Explore the market</span>
             <h2>Browse categories, concepts, and software alternatives</h2>
             <p class="content-width">
-              Use this guide to compare platforms, understand category differences, and explore representative vendor options across the supply chain software landscape.
+              Use this site to compare category definitions, review common vendor options, and understand where different systems fit in real supply chain operating environments.
             </p>
             <div class="inline-actions" style="margin-top:24px;">
               <a class="button" href="/alternatives/palantir.html">Open alternatives page</a>
@@ -238,7 +236,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container">This site is structured as an informational resource for software evaluation and category understanding.</div>
+      <div class="container">Informational reference for evaluating supply chain software and related operating models.</div>
     </footer>
   </div>
 
@@ -254,6 +252,5 @@
 
     document.querySelectorAll(".reveal:not(.is-visible)").forEach((el) => observer.observe(el));
   </script>
-  <script src="/main.js"></script>
 </body>
 </html>
