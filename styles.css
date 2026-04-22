@@ -728,3 +728,126 @@ main.container table {
     text-align: left;
   }
 }
+
+
+/* ===== Subpage content layout ===== */
+
+main.container {
+  padding-top: 32px;
+  padding-bottom: 56px;
+}
+
+main.container > .hero {
+  padding: 28px 0 18px;
+}
+
+main.container > .hero h1 {
+  margin: 0 0 14px;
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 5vw, 4.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+main.container > .hero p {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.85;
+}
+
+main.container > .section {
+  padding: 34px 0;
+}
+
+main.container > .section h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.subtext {
+  max-width: 64ch;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.82;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 28px;
+  margin-top: 22px;
+}
+
+.grid > div {
+  padding: 0 0 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.grid h3 {
+  margin: 0 0 8px;
+  font-size: 1.18rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.list {
+  display: grid;
+  gap: 0;
+  margin-top: 16px;
+}
+
+.list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.list strong {
+  font-size: 1rem;
+  font-family: "Space Grotesk", Inter, sans-serif;
+}
+
+.list span {
+  color: var(--muted);
+  text-align: right;
+  font-size: 0.95rem;
+}
+
+main.container table {
+  margin-top: 16px;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  main.container > .hero h1 {
+    max-width: none;
+    font-size: 2.5rem;
+  }
+
+  .list div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list span {
+    text-align: left;
+  }
+}
