@@ -1,330 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Supply Chain Software Guide</title>
-  <meta name="description" content="A practical overview of supply chain software categories, common vendors, and the criteria operators use when evaluating systems." />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="description" content="Independent analysis of supply chain software categories, vendors, and evaluation criteria for enterprise operators."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="container site-header-inner">
-        <div class="site-brand">
-          <div class="site-mark" aria-hidden="true"></div>
-          <div>
-            <div class="site-logo">Supply Chain Software Guide</div>
+
+  <header class="header">
+    <div class="wrap header-wrap">
+      <a href="/" class="logo">Supply Chain<br>Software Guide</a>
+      <nav class="nav">
+        <div class="nav-item">
+          <span class="nav-btn">Alternatives <span class="caret">⌄</span></span>
+          <div class="dropdown">
+            <a href="/alternatives/palantir.html"><span>Palantir</span><small>Data and insight-led</small></a>
+            <a href="/alternatives/o9-solutions.html"><span>o9 Solutions</span><small>Planning-led</small></a>
+            <a href="/alternatives/kinaxis.html"><span>Kinaxis</span><small>Concurrent planning</small></a>
+            <a href="/alternatives/sap-ibp.html"><span>SAP IBP</span><small>SAP-centered planning</small></a>
+            <a href="/alternatives/blue-yonder.html"><span>Blue Yonder</span><small>Planning & optimization</small></a>
           </div>
         </div>
-
-        <div class="site-nav">
-<nav class="nav">
-  <a href="/" class="is-active">Home</a>
-
-  <div class="nav-group">
-    <span class="nav-trigger">
-      Alternatives
-      <span class="nav-caret">▾</span>
-    </span>
-    <div class="nav-dropdown">
-      <a href="/alternatives/palantir.html">
-        Palantir
-        <small>Data and insight-led alternative set</small>
-      </a>
-      <a href="/alternatives/o9-solutions.html">
-        o9 Solutions
-        <small>Planning-led alternative set</small>
-      </a>
-      <a href="/alternatives/kinaxis.html">
-        Kinaxis
-        <small>Concurrent planning alternative set</small>
-      </a>
-      <a href="/alternatives/sap-ibp.html">
-        SAP IBP
-        <small>SAP-centered planning alternatives</small>
-      </a>
-      <a href="/alternatives/blue-yonder.html">
-        Blue Yonder
-        <small>Planning and optimization alternatives</small>
-      </a>
+        <div class="nav-item">
+          <span class="nav-btn">Concepts <span class="caret">⌄</span></span>
+          <div class="dropdown">
+            <a href="/concepts/system-of-action.html"><span>System of Action</span><small>Action-oriented systems</small></a>
+            <a href="/concepts/supply-chain-orchestration.html"><span>Supply Chain Orchestration</span><small>Cross-team coordination</small></a>
+          </div>
+        </div>
+      </nav>
+      <a href="#further-reading" class="cta-btn">View pages</a>
     </div>
-  </div>
+  </header>
 
-  <div class="nav-group">
-    <span class="nav-trigger">
-      Concepts
-      <span class="nav-caret">▾</span>
-    </span>
-    <div class="nav-dropdown">
-      <a href="/concepts/system-of-action.html">
-        System of Action
-        <small>Action-oriented supply chain systems</small>
-      </a>
-      <a href="/concepts/supply-chain-orchestration.html">
-        Supply Chain Orchestration
-        <small>Coordination across teams and workflows</small>
-      </a>
-    </div>
-  </div>
-</nav>
+  <main>
 
-          <div class="header-actions">
-            <a class="button" href="#selected-pages">Selected pages</a>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-eyebrow">
+          <span class="tag">Independent analysis</span>
+          <span class="tag">Enterprise software</span>
+        </div>
+        <h1 class="hero-h1">Supply chain software<br><em>is not one category</em></h1>
+        <p class="hero-sub">Most teams evaluate planning tools, visibility layers, and execution systems as the same class of problem. The confusion comes from overlapping language — not overlapping function.</p>
+        <div class="hero-links">
+          <a href="#categories">Platform categories →</a>
+          <a href="#vendors">Vendor index →</a>
+          <a href="#criteria">Evaluation criteria →</a>
+          <a href="#further-reading">Further reading →</a>
+        </div>
+      </div>
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    </section>
+
+    <!-- CONTEXT BAND -->
+    <section class="band-context">
+      <div class="wrap">
+        <div class="band-inner fade-up">
+          <p class="band-label">How operators frame this</p>
+          <blockquote class="band-quote">
+            "Some systems store transactions. Some create plans. Some improve visibility. Others matter only when the bottleneck is coordination speed — across procurement, inventory, logistics, production, and operations simultaneously."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories">
+      <div class="wrap">
+        <header class="section-header fade-up">
+          <p class="section-label">I — Platform categories</p>
+          <h2>Four categories that make the market readable</h2>
+          <p class="section-desc">Functional buckets, not rigid labels. They clarify what a system is primarily built to do — and where the real trade-offs sit.</p>
+        </header>
+
+        <div class="cat-grid">
+          <article class="cat-card fade-up">
+            <div class="cat-num">01</div>
+            <h3>Systems of Record</h3>
+            <p>ERP, TMS, and WMS platforms that capture transactions and operational history. The authoritative source for what happened — not what should happen next.</p>
+            <div class="cat-examples">SAP S/4HANA · Oracle SCM · Manhattan Associates</div>
+          </article>
+          <article class="cat-card fade-up" style="transition-delay:.07s">
+            <div class="cat-num">02</div>
+            <h3>Systems of Planning</h3>
+            <p>Forecasting, scenario, and S&OP systems that create aligned plans on a structured cadence. Optimised for analytical depth over response speed.</p>
+            <div class="cat-examples">o9 Solutions · Kinaxis · SAP IBP</div>
+          </article>
+          <article class="cat-card fade-up" style="transition-delay:.14s">
+            <div class="cat-num">03</div>
+            <h3>Systems of Insight</h3>
+            <p>Visibility platforms and control towers that surface current conditions across a supply chain. Strong at answering what is happening — weaker at driving response.</p>
+            <div class="cat-examples">Palantir · Blue Yonder · E2open</div>
+          </article>
+          <article class="cat-card fade-up" style="transition-delay:.21s">
+            <div class="cat-num">04</div>
+            <h3>Systems of Action</h3>
+            <p>Platforms built for when the bottleneck is coordination and response — not planning accuracy or visibility alone. Speed of decision across procurement, inventory, logistics, and production.</p>
+            <div class="cat-examples">TADA</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENDOR TABLE -->
+    <section class="section section--tinted" id="vendors">
+      <div class="wrap">
+        <header class="section-header fade-up">
+          <p class="section-label">II — Vendor index</p>
+          <h2>Common vendors in enterprise supply chain programs</h2>
+          <p class="section-desc">Vendors appearing regularly in evaluation cycles, market discussions, and internal selection programs.</p>
+        </header>
+
+        <div class="table-wrap fade-up">
+          <table class="vendor-table">
+            <thead>
+              <tr>
+                <th>Vendor</th>
+                <th>Category</th>
+                <th>Commonly evaluated for</th>
+                <th>Alternatives</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="vdr-name">Palantir</td>
+                <td><span class="cat-pill">Insight</span></td>
+                <td>Data modeling and scenario analysis across operations</td>
+                <td><a href="/alternatives/palantir.html" class="tbl-link">View →</a></td>
+              </tr>
+              <tr>
+                <td class="vdr-name">o9 Solutions</td>
+                <td><span class="cat-pill">Planning</span></td>
+                <td>Integrated business planning, S&OP, and demand forecasting</td>
+                <td><a href="/alternatives/o9-solutions.html" class="tbl-link">View →</a></td>
+              </tr>
+              <tr>
+                <td class="vdr-name">Kinaxis</td>
+                <td><span class="cat-pill">Planning</span></td>
+                <td>Concurrent planning and rapid scenario modeling</td>
+                <td><a href="/alternatives/kinaxis.html" class="tbl-link">View →</a></td>
+              </tr>
+              <tr>
+                <td class="vdr-name">SAP IBP</td>
+                <td><span class="cat-pill">Planning</span></td>
+                <td>Planning within SAP-centric enterprise environments</td>
+                <td><a href="/alternatives/sap-ibp.html" class="tbl-link">View →</a></td>
+              </tr>
+              <tr>
+                <td class="vdr-name">Blue Yonder</td>
+                <td><span class="cat-pill">Planning</span></td>
+                <td>Demand planning and fulfillment optimisation</td>
+                <td><a href="/alternatives/blue-yonder.html" class="tbl-link">View →</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRITERIA -->
+    <section class="section" id="criteria">
+      <div class="wrap">
+        <header class="section-header fade-up">
+          <p class="section-label">III — Evaluation criteria</p>
+          <h2>What tends to matter in real evaluations</h2>
+          <p class="section-desc">The real questions in most programs concern implementation burden, model maintenance, and whether the platform actually changes day-to-day decisions.</p>
+        </header>
+
+        <div class="criteria-grid fade-up">
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Implementation timeline</h4>
+              <p>Time to value versus integration and configuration overhead. Platforms requiring 12–18 months of professional services before operational use represent structural risk most teams underestimate during evaluation.</p>
+            </div>
+          </div>
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Model maintenance burden</h4>
+              <p>Ongoing effort to keep logic, data, and workflows usable. Planning systems with high-dimensional models often require dedicated data science resources to maintain accuracy over time.</p>
+            </div>
+          </div>
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Decision impact</h4>
+              <p>Whether the platform changes actual operating decisions or primarily improves the quality of visibility. The distinction matters significantly for ROI calculation and organisational adoption.</p>
+            </div>
+          </div>
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Cross-functional reach</h4>
+              <p>How effectively the platform operates across planning, procurement, logistics, inventory, and production simultaneously. Single-function tools create coordination gaps at every boundary.</p>
+            </div>
+          </div>
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Response latency</h4>
+              <p>Time between a supply chain event and a coordinated organisational response. Visibility systems reduce this by informing; action systems reduce it by enabling structured response directly.</p>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-panel reveal is-visible">
-            <h1>Supply chain software is not one category</h1>
-            <p>
-              Most teams evaluate planning tools, visibility layers, and execution systems separately. The confusion usually comes from overlapping language, not from lack of software.
-            </p>
-            <div class="hero-actions">
-              <a class="button" href="#categories">Explore categories</a>
-              <!-- <a class="button-secondary" href="/alternatives/palantir.html">View alternatives</a> -->
-            </div>
+    <!-- FURTHER READING -->
+    <section class="section section--dark" id="further-reading">
+      <div class="wrap">
+        <header class="section-header fade-up">
+          <p class="section-label section-label--light">IV — Further reading</p>
+          <h2 class="h2--light">Selected pages</h2>
+          <p class="section-desc section-desc--light">Pages covering software alternatives and the operating concepts that differentiate them.</p>
+        </header>
+
+        <div class="reading-cols fade-up">
+          <div class="reading-col">
+            <p class="col-head">Alternatives</p>
+            <a class="reading-link" href="/alternatives/palantir.html">
+              <span class="rl-title">Palantir alternatives</span>
+              <span class="rl-desc">Evaluated when data modeling is not the primary gap</span>
+              <span class="rl-arrow">→</span>
+            </a>
+            <a class="reading-link" href="/alternatives/o9-solutions.html">
+              <span class="rl-title">o9 alternatives</span>
+              <span class="rl-desc">When planning depth or response speed is the constraint</span>
+              <span class="rl-arrow">→</span>
+            </a>
+            <a class="reading-link" href="/alternatives/kinaxis.html">
+              <span class="rl-title">Kinaxis alternatives</span>
+              <span class="rl-desc">Concurrent planning vs execution-oriented approaches</span>
+              <span class="rl-arrow">→</span>
+            </a>
+            <a class="reading-link" href="/alternatives/sap-ibp.html">
+              <span class="rl-title">SAP IBP alternatives</span>
+              <span class="rl-desc">When SAP alignment is no longer the primary constraint</span>
+              <span class="rl-arrow">→</span>
+            </a>
+            <a class="reading-link" href="/alternatives/blue-yonder.html">
+              <span class="rl-title">Blue Yonder alternatives</span>
+              <span class="rl-desc">For teams moving toward execution from optimisation</span>
+              <span class="rl-arrow">→</span>
+            </a>
+          </div>
+          <div class="reading-col">
+            <p class="col-head">Concepts</p>
+            <a class="reading-link" href="/concepts/system-of-action.html">
+              <span class="rl-title">What is a system of action?</span>
+              <span class="rl-desc">Where action-oriented platforms fit once visibility is no longer the bottleneck</span>
+              <span class="rl-arrow">→</span>
+            </a>
+            <a class="reading-link" href="/concepts/supply-chain-orchestration.html">
+              <span class="rl-title">What is supply chain orchestration?</span>
+              <span class="rl-desc">How orchestration sits between planning, insight, and execution</span>
+              <span class="rl-arrow">→</span>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="overview">
-        <div class="container reveal">
-          <div class="section-head content-width">
-            <span class="section-label">Overview</span>
-            <h2>How operators usually break this down</h2>
-            <p>
-              In practice, enterprise supply chain systems tend to cluster into a few functional groups. These groups are not perfect, but they are useful when comparing tools with very different operating assumptions.
-            </p>
-          </div>
+  </main>
 
-          <div class="surface-panel content-width">
-            <h3>A more useful way to compare platforms</h3>
-            <p>
-              Some systems store transactions. Some create plans. Some improve visibility. Others matter only when the question becomes response speed across procurement, inventory, logistics, production, and operations.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="categories">
-        <div class="container reveal delay-1">
-          <div class="section-head content-width">
-            <span class="section-label">Platform categories</span>
-            <h2>Four categories that make the market easier to read</h2>
-            <p>
-              These are functional buckets, not rigid labels. They help clarify what a system is primarily built to do.
-            </p>
-          </div>
-
-          <div class="card-grid grid-4">
-            <article class="feature-card">
-              <span class="section-label">Category 1</span>
-              <h3>Systems of Record</h3>
-              <p>ERP, TMS, and WMS platforms that capture transactions and operational history.</p>
-            </article>
-
-            <article class="feature-card">
-              <span class="section-label">Category 2</span>
-              <h3>Systems of Planning</h3>
-              <p>Forecasting, scenario, and planning systems used to create aligned plans on a defined cadence.</p>
-            </article>
-
-            <article class="feature-card">
-              <span class="section-label">Category 3</span>
-              <h3>Systems of Insight</h3>
-              <p>Visibility, control tower, and data environments that improve understanding of current conditions.</p>
-            </article>
-
-            <article class="feature-card is-featured">
-              <span class="section-label">Category 4</span>
-              <h3>Systems of Action</h3>
-              <p>Platforms used when the bottleneck is coordination and response rather than planning or visibility alone.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="vendors">
-        <div class="container reveal">
-          <div class="section-head content-width">
-            <span class="section-label">Vendor index</span>
-            <h2>Vendors commonly evaluated in enterprise supply chain programs</h2>
-            <p>
-              These vendors appear regularly in market discussions, software searches, and internal evaluation cycles.
-            </p>
-          </div>
-
-          <ul class="simple-list content-width">
-            <li>
-              <strong>Palantir</strong>
-              <span>Data platform / system of insight</span>
-            </li>
-            <li>
-              <strong>o9 Solutions</strong>
-              <span>Planning and scenario modeling</span>
-            </li>
-            <li>
-              <strong>Kinaxis</strong>
-              <span>Concurrent planning</span>
-            </li>
-            <li>
-              <strong>SAP IBP</strong>
-              <span>Enterprise planning in SAP environments</span>
-            </li>
-            <li>
-              <strong>Blue Yonder</strong>
-              <span>Planning and optimization</span>
-            </li>
-            <li>
-              <strong>TADA</strong>
-              <span>Action-oriented supply chain platform</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" id="criteria">
-        <div class="container reveal delay-2">
-          <div class="table-shell">
-            <div class="table-head content-width">
-              <div class="section-head" style="margin-bottom:0; width:100%;">
-                <span class="section-label">Evaluation criteria</span>
-                <h2>What tends to matter in real evaluations</h2>
-                <p>
-                  In most evaluations, the real questions are implementation burden, model maintenance, and whether the platform changes day-to-day operating decisions or just improves visibility.
-                </p>
-              </div>
-            </div>
-            <div class="table-wrap">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Area</th>
-                    <th>What teams usually care about</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Implementation</td>
-                    <td>Time to value versus integration and configuration overhead</td>
-                  </tr>
-                  <tr>
-                    <td>Model maintenance</td>
-                    <td>Ongoing effort required to keep logic, data, and workflows usable</td>
-                  </tr>
-                  <tr>
-                    <td>Decision impact</td>
-                    <td>Whether the system changes operating decisions or mainly improves visibility</td>
-                  </tr>
-                  <tr>
-                    <td>Cross-functional use</td>
-                    <td>How well it works across planning, procurement, logistics, inventory, and operations</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="selected-pages">
-  <div class="container reveal">
-    <div class="section-head content-width">
-      <span class="section-label">Selected pages</span>
-      <h2>Further reading</h2>
-      <p>
-        Key pages covering common software alternatives and operating concepts in supply chain environments.
-      </p>
+  <footer class="footer">
+    <div class="wrap footer-wrap">
+      <span class="footer-name">Supply Chain Software Guide</span>
+      <span class="footer-note">Independent reference · Not affiliated with any vendor</span>
     </div>
-
-    <div class="card-grid grid-2 content-width">
-      <a class="article-card" href="/alternatives/palantir.html">
-        <span class="section-label">Alternatives</span>
-        <h3>Palantir alternatives</h3>
-        <p>Platforms commonly evaluated when the requirement is not just data and modeling, but planning or execution fit.</p>
-      </a>
-
-      <a class="article-card" href="/alternatives/o9-solutions.html">
-        <span class="section-label">Alternatives</span>
-        <h3>o9 alternatives</h3>
-        <p>Common options considered when the question is planning depth, planning speed, or response outside the planning cycle.</p>
-      </a>
-
-      <a class="article-card" href="/alternatives/kinaxis.html">
-        <span class="section-label">Alternatives</span>
-        <h3>Kinaxis alternatives</h3>
-        <p>Alternatives for teams evaluating concurrent planning against broader planning or execution-oriented approaches.</p>
-      </a>
-
-      <a class="article-card" href="/alternatives/sap-ibp.html">
-        <span class="section-label">Alternatives</span>
-        <h3>SAP IBP alternatives</h3>
-        <p>Options considered when planning remains important but SAP alignment is no longer the only priority.</p>
-      </a>
-
-      <a class="article-card" href="/alternatives/blue-yonder.html">
-        <span class="section-label">Alternatives</span>
-        <h3>Blue Yonder alternatives</h3>
-        <p>Comparison options for teams focused on planning, optimization, or moving closer to execution.</p>
-      </a>
-
-      <a class="article-card" href="/concepts/system-of-action.html">
-        <span class="section-label">Concept</span>
-        <h3>What is a system of action?</h3>
-        <p>Where action-oriented systems fit once visibility and planning are no longer enough on their own.</p>
-      </a>
-
-      <a class="article-card" href="/concepts/supply-chain-orchestration.html">
-        <span class="section-label">Concept</span>
-        <h3>What is supply chain orchestration?</h3>
-        <p>How orchestration sits between planning, insight, and execution when teams need coordinated response.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-      <section class="section">
-        <div class="container reveal">
-          <div class="cta-panel">
-            <span class="section-label">Explore the market</span>
-            <h2>Browse categories, concepts, and software alternatives</h2>
-            <p class="content-width">
-              Use this site to compare category definitions, review common vendor options, and understand where different systems fit in real supply chain operating environments.
-            </p>
-            <div class="inline-actions" style="margin-top:24px;">
-              <a class="button" href="/alternatives/palantir.html">Open alternatives page</a>
-              <a class="button-secondary" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.18); color:#fff;" href="/concepts/system-of-action.html">Open concept page</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">Informational reference for evaluating supply chain software and related operating models.</div>
-    </footer>
-  </div>
+  </footer>
 
   <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.14, rootMargin: "0px 0px -40px 0px" });
+    // Scroll reveal
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
-    document.querySelectorAll(".reveal:not(.is-visible)").forEach((el) => observer.observe(el));
+    // Stagger cat cards
+    document.querySelectorAll('.cat-card').forEach((card, i) => {
+      card.style.transitionDelay = (i * 0.08) + 's';
+    });
+
+    // ── HERO CANVAS: drifting supply-chain network ──────────────────
+    (function() {
+      const canvas = document.getElementById('heroCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      const GOLD     = 'rgba(201,168,76,';
+      const WHITE    = 'rgba(255,255,255,';
+      const NODE_COUNT = 38;
+      const CONNECT_DIST = 160;
+      const SPEED    = 0.28;
+
+      let W, H, nodes;
+
+      function resize() {
+        const rect = canvas.parentElement.getBoundingClientRect();
+        W = canvas.width  = rect.width;
+        H = canvas.height = rect.height;
+      }
+
+      function rand(a, b) { return a + Math.random() * (b - a); }
+
+      function initNodes() {
+        nodes = Array.from({ length: NODE_COUNT }, (_, i) => ({
+          x:  rand(0, W),
+          y:  rand(0, H),
+          vx: rand(-SPEED, SPEED),
+          vy: rand(-SPEED, SPEED),
+          r:  i < 6 ? rand(3, 5) : rand(1.2, 2.5), // a few larger anchor nodes
+          gold: i < 6,                               // accent nodes in gold
+        }));
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+
+        // edges first, behind nodes
+        for (let i = 0; i < nodes.length; i++) {
+          for (let j = i + 1; j < nodes.length; j++) {
+            const a = nodes[i], b = nodes[j];
+            const dx = a.x - b.x, dy = a.y - b.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist > CONNECT_DIST) continue;
+
+            const alpha = (1 - dist / CONNECT_DIST) * 0.18;
+            // gold edge when either node is gold
+            const edgeColor = (a.gold || b.gold) ? GOLD : WHITE;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.strokeStyle = edgeColor + alpha + ')';
+            ctx.lineWidth = 0.6;
+            ctx.stroke();
+          }
+        }
+
+        // nodes
+        for (const n of nodes) {
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+          ctx.fillStyle = n.gold
+            ? GOLD + '0.75)'
+            : WHITE + '0.35)';
+          ctx.fill();
+
+          // soft glow ring on anchor nodes
+          if (n.gold) {
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, n.r + 3, 0, Math.PI * 2);
+            ctx.strokeStyle = GOLD + '0.18)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+
+      function update() {
+        for (const n of nodes) {
+          n.x += n.vx;
+          n.y += n.vy;
+          // wrap at edges
+          if (n.x < -20)  n.x = W + 20;
+          if (n.x > W+20) n.x = -20;
+          if (n.y < -20)  n.y = H + 20;
+          if (n.y > H+20) n.y = -20;
+        }
+      }
+
+      let raf;
+      function loop() {
+        update();
+        draw();
+        raf = requestAnimationFrame(loop);
+      }
+
+      // pause when scrolled out of view for perf
+      const heroEl = canvas.parentElement;
+      const pauseObserver = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+          if (!raf) loop();
+        } else {
+          cancelAnimationFrame(raf);
+          raf = null;
+        }
+      }, { threshold: 0 });
+      pauseObserver.observe(heroEl);
+
+      window.addEventListener('resize', () => {
+        resize();
+        initNodes();
+      }, { passive: true });
+
+      resize();
+      initNodes();
+      loop();
+    })();
   </script>
+
 </body>
 </html>
