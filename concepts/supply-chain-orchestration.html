@@ -1,208 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>What Is Supply Chain Orchestration?</title>
-  <meta name="description" content="A practical explanation of supply chain orchestration and how it differs from planning, visibility, and execution systems." />
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <meta name="description" content="A practical explanation of supply chain orchestration and how it sits between planning, insight, and execution."/>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css"/>
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="container site-header-inner">
-        <div class="site-brand">
-          <div class="site-mark" aria-hidden="true"></div>
-          <div>
-            <div class="site-logo">Supply Chain Software Guide</div>
+  <header class="header">
+    <div class="wrap header-wrap">
+      <a href="/" class="logo">Supply Chain<br>Software Guide</a>
+      <nav class="nav">
+        <div class="nav-item">
+          <span class="nav-btn">Alternatives <span class="caret">⌄</span></span>
+          <div class="dropdown">
+            <a href="/alternatives/palantir.html"><span>Palantir</span><small>Data and insight-led</small></a>
+            <a href="/alternatives/o9-solutions.html"><span>o9 Solutions</span><small>Planning-led</small></a>
+            <a href="/alternatives/kinaxis.html"><span>Kinaxis</span><small>Concurrent planning</small></a>
+            <a href="/alternatives/sap-ibp.html"><span>SAP IBP</span><small>SAP-centered planning</small></a>
+            <a href="/alternatives/blue-yonder.html"><span>Blue Yonder</span><small>Planning & optimization</small></a>
           </div>
         </div>
+        <div class="nav-item">
+          <span class="nav-btn">Concepts <span class="caret">⌄</span></span>
+          <div class="dropdown">
+            <a href="/concepts/system-of-action.html"><span>System of Action</span><small>Action-oriented systems</small></a>
+            <a href="/concepts/supply-chain-orchestration.html"><span>Supply Chain Orchestration</span><small>Cross-team coordination</small></a>
+          </div>
+        </div>
+      </nav>
+      <a href="/" class="cta-btn">← Overview</a>
+    </div>
+  </header>
+  <main>
 
-        <div class="site-nav">
-          <nav class="nav">
-            <a href="/">Home</a>
+    <section class="subhero">
+      <div class="wrap">
+        <div class="subhero-inner fade-up">
+          <p class="subhero-eyebrow"><a href="/">Overview</a> <span>/</span> Concepts</p>
+          <h1>What is supply chain<br><em>orchestration?</em></h1>
+          <p class="subhero-deck">Orchestration sits between planning and execution. It is the coordination layer that ensures the right teams take the right actions in the right sequence — especially when conditions deviate from plan.</p>
+        </div>
+      </div>
+    </section>
 
-            <div class="nav-group">
-              <span class="nav-trigger">
-                Alternatives
-                <span class="nav-caret">▾</span>
-              </span>
-              <div class="nav-dropdown">
-                <a href="/alternatives/palantir.html">Palantir<small>Data and insight-led alternative set</small></a>
-                <a href="/alternatives/o9.html">o9 Solutions<small>Planning-led alternative set</small></a>
-                <a href="/alternatives/kinaxis.html">Kinaxis<small>Concurrent planning alternative set</small></a>
-                <a href="/alternatives/sap-ibp.html">SAP IBP<small>SAP-centered planning alternatives</small></a>
-                <a href="/alternatives/blue-yonder.html">Blue Yonder<small>Planning and optimization alternatives</small></a>
-              </div>
+    <section class="section" id="definition">
+      <div class="wrap">
+        <div class="section-header fade-up">
+          <p class="section-label">Definition</p>
+          <h2>What orchestration actually means in practice</h2>
+          <p class="section-desc">In software terms, orchestration typically means coordinating a sequence of tasks across systems and teams. In supply chains, it means ensuring that when a signal arrives — a supplier delay, a demand spike, a logistics failure — the response is structured, not improvised.</p>
+        </div>
+        <div class="concept-callout fade-up">
+          <p>Most supply chain disruptions are not caused by a lack of information. They are caused by a breakdown in the coordination of response. Orchestration is the infrastructure for that coordination.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="layers">
+      <div class="wrap">
+        <div class="section-header fade-up">
+          <p class="section-label">Where it sits</p>
+          <h2>The three layers orchestration connects</h2>
+        </div>
+        <div class="criteria-grid fade-up">
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Data and signals</h4>
+              <p>Orchestration consumes signals from record systems and visibility platforms — inventory levels, shipment status, supplier confirmations, demand updates. It does not replace those systems; it acts on their outputs.</p>
             </div>
-
-            <div class="nav-group">
-              <span class="nav-trigger is-active">
-                Concepts
-                <span class="nav-caret">▾</span>
-              </span>
-              <div class="nav-dropdown">
-                <a href="/concepts/system-of-action.html">System of Action<small>Action-oriented supply chain systems</small></a>
-                <a href="/concepts/supply-chain-orchestration.html">Supply Chain Orchestration<small>Coordination across teams and workflows</small></a>
-              </div>
+          </div>
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Decision workflows</h4>
+              <p>When a signal indicates a deviation, orchestration structures the decision: what needs to happen, who owns each action, in what sequence, and with what timeline. This replaces ad hoc coordination over email and calls.</p>
             </div>
-          </nav>
-
-          <div class="header-actions">
-            <!-- <a class="button-secondary" href="#definition">Definition</a>
-            <a class="button" href="/alternatives/palantir.html">Alternatives</a> -->
+          </div>
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Cross-functional execution</h4>
+              <p>Orchestration spans functions — procurement, inventory planning, logistics, production. A single disruption typically requires action from multiple teams simultaneously. Orchestration connects those actions into a coherent response.</p>
+            </div>
+          </div>
+          <div class="criteria-item">
+            <div class="criteria-num">—</div>
+            <div>
+              <h4>Relationship to planning</h4>
+              <p>Planning systems set the baseline. Orchestration handles deviation from that baseline. The two are complementary — organisations typically need both, but they solve different problems at different timescales.</p>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-panel reveal is-visible">
-            <h1>What is supply chain orchestration?</h1>
-            <p>
-              Supply chain orchestration usually refers to the coordination layer between planning, visibility, and execution. The term becomes useful when the challenge is not just understanding what changed, but aligning how different teams respond.
-            </p>
-            <div class="hero-actions">
-              <a class="button" href="#definition">Read definition</a>
-              <a class="button-secondary" href="#where-it-matters">Where it matters</a>
-            </div>
+    <section class="section" id="why-it-matters">
+      <div class="wrap">
+        <div class="section-header fade-up">
+          <p class="section-label">Why it matters now</p>
+          <h2>Why orchestration is getting more attention</h2>
+          <p class="section-desc">Supply chain volatility has increased the frequency and cost of disruptions. Planning cycles that made sense in stable environments are too slow when conditions change weekly. Orchestration is the layer that handles what planning cannot.</p>
+        </div>
+        <div class="decision-list fade-up">
+          <div class="decision-item">
+            <h4>Shorter disruption cycles</h4>
+            <p>Disruptions that used to occur quarterly now occur monthly or weekly in many industries. Planning cadences have not kept pace; orchestration fills the gap.</p>
+          </div>
+          <div class="decision-item">
+            <h4>More interdependencies</h4>
+            <p>Modern supply chains have more handoffs across more systems and teams. Each handoff is a potential delay. Orchestration reduces coordination time at every boundary.</p>
+          </div>
+          <div class="decision-item">
+            <h4>Higher cost of slow response</h4>
+            <p>As inventory buffers have been reduced and lead times compressed, the cost of a slow response — expediting, line stoppages, customer penalties — has increased significantly.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="definition">
-        <div class="container reveal">
-          <div class="section-head content-width">
-            <span class="section-label">Definition</span>
-            <h2>What orchestration is trying to solve</h2>
-            <p>
-              Most supply chains already have planning systems, transactional systems, and dashboards. Orchestration matters when those systems do not automatically create coordinated action across planning, procurement, inventory, logistics, and operations.
-            </p>
-          </div>
-
-          <div class="surface-panel content-width">
-            <h3>The practical gap</h3>
-            <p>
-              The gap is usually not lack of data. It is lack of coordinated response. Teams see the same issue, but still resolve it through calls, escalations, spreadsheets, and parallel workflows.
-            </p>
+    <section class="section section--dark">
+      <div class="wrap">
+        <div class="cta-band fade-up">
+          <p class="section-label section-label--light">Related concept</p>
+          <h2 class="h2--light">Systems of action vs orchestration</h2>
+          <p class="section-desc section-desc--light">Orchestration describes the function; a system of action is the platform category built to perform it.</p>
+          <div class="cta-actions">
+            <a href="/concepts/system-of-action.html" class="cta-btn">Read: System of action →</a>
+            <a href="/" class="cta-btn-ghost">Back to overview</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <div class="container reveal delay-1">
-          <div class="section-head content-width">
-            <span class="section-label">How it differs</span>
-            <h2>Orchestration versus adjacent layers</h2>
-          </div>
-
-          <div class="table-shell">
-            <div class="table-wrap">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Layer</th>
-                    <th>Main role</th>
-                    <th>Typical limitation</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Planning</td>
-                    <td>Create scenarios, forecasts, and aligned plans</td>
-                    <td>Often too slow once disruption is already in motion</td>
-                  </tr>
-                  <tr>
-                    <td>Visibility / Insight</td>
-                    <td>Help teams see what is happening</td>
-                    <td>Does not automatically drive coordinated response</td>
-                  </tr>
-                  <tr>
-                    <td>Orchestration</td>
-                    <td>Coordinate response across workflows and teams</td>
-                    <td>Value depends on operating adoption, not just data quality</td>
-                  </tr>
-                  <tr>
-                    <td>Execution</td>
-                    <td>Carry decisions into operational action</td>
-                    <td>Can still fragment if coordination logic is weak</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="where-it-matters">
-        <div class="container reveal">
-          <div class="section-head content-width">
-            <span class="section-label">Where it matters</span>
-            <h2>When orchestration becomes operationally important</h2>
-            <p>
-              The concept matters most in environments with frequent change, tight interdependencies, and multiple functions making decisions off the same disruption.
-            </p>
-          </div>
-
-          <div class="split-grid content-width">
-            <div class="split-block">
-              <h3>Typical conditions</h3>
-              <p>Material shortages, supplier volatility, schedule changes, expediting decisions, and inventory reallocations that require multiple teams to move together.</p>
-            </div>
-            <div class="split-block">
-              <h3>What teams are usually trying to reduce</h3>
-              <p>Manual escalation, duplicated analysis, conflicting decisions, and response delays created by disconnected systems and handoffs.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container reveal delay-2">
-          <div class="section-head content-width">
-            <span class="section-label">Vendor context</span>
-            <h2>How the concept tends to show up in software evaluation</h2>
-            <p>
-              Orchestration usually sits between systems that generate insight and systems that support action. In evaluation cycles, the question is often whether the platform changes coordination behavior, not just visibility.
-            </p>
-          </div>
-
-          <ul class="simple-list content-width">
-            <li>
-              <strong>Planning platforms</strong>
-              <span>Often provide structure, but not always cross-functional response execution</span>
-            </li>
-            <li>
-              <strong>Insight platforms</strong>
-              <span>Often improve visibility, but may still leave response coordination manual</span>
-            </li>
-            <li>
-              <strong>Action-oriented platforms</strong>
-              <span>More likely to be evaluated when response coordination is the primary bottleneck</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-  </div>
-
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-wrap">
+      <span class="footer-name">Supply Chain Software Guide</span>
+      <span class="footer-note">Independent reference · Not affiliated with any vendor</span>
+    </div>
+  </footer>
   <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.14, rootMargin: "0px 0px -40px 0px" });
-
-    document.querySelectorAll(".reveal:not(.is-visible)").forEach((el) => observer.observe(el));
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
   </script>
 </body>
 </html>
