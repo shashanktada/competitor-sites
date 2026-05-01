@@ -482,15 +482,14 @@ section { scroll-margin-top: 80px; }
   align-items: flex-start;
 }
 
-/* remove right border from even items (right column) */
+/* right column: no right border */
 .criteria-item:nth-child(2n) { border-right: none; }
-/* remove bottom border from last row */
-.criteria-item:nth-last-child(-n+2) { border-bottom: none; }
-/* if odd total — last item spans */
-.criteria-item:last-child:nth-child(odd) {
-  grid-column: span 2;
-  border-right: none;
-}
+/* last item always: no bottom border, no right border */
+.criteria-item:last-child { border-bottom: none; border-right: none; }
+/* if odd total: last item spans full width */
+.criteria-item:last-child:nth-child(odd) { grid-column: span 2; }
+/* item before last, if it's a left-column item (odd): no bottom border */
+.criteria-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
 
 .criteria-num {
   font-family: 'Playfair Display', Georgia, serif;
@@ -628,7 +627,7 @@ section { scroll-margin-top: 80px; }
   .cat-card:last-child { border-bottom: none !important; }
   .criteria-grid { grid-template-columns: 1fr; }
   .criteria-item { border-right: none !important; }
-  .criteria-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--rule) !important; }
+  .criteria-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--rule) !important; }
   .criteria-item:last-child { border-bottom: none !important; grid-column: span 1; }
   .reading-cols { grid-template-columns: 1fr; gap: 0; }
   .reading-col:first-child { margin-bottom: 40px; }
